@@ -1,0 +1,43 @@
+/* .container {
+    padding: 0rem 0rem;
+  } */
+  
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 400px;
+    }
+    .modal-dialog .modal-content {
+      padding: 1rem;
+      background-color: #e7e4df;
+    }
+  }
+
+  .modal-backdrop{
+    z-index : 0;
+  }
+  .modal-header .close {
+    margin-top: -1.5rem;
+  }
+  
+  .form-title {
+    margin: -2rem 0rem 2rem;
+  }
+  
+  #btnLogin1{
+    background-color: #B68C3F; 
+    margin-left: 0.5rem; 
+    border-radius: 3em;
+    margin-left: 6em;
+  }
+
+  .btn-round {
+    border-radius: 3rem;
+  }
+  
+  .delimiter {
+    padding: 1rem;
+  }
+
+  .signup-section {
+    padding: 0.3rem 0rem;
+  }

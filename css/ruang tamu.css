@@ -1,0 +1,27 @@
+.isi{
+    margin-top: 170px;
+}
+.estimasi{
+    color: #066A04;
+}
+.row{
+    margin-bottom: 20px;
+}
+.ui-breadcrumb{background-image: none;}
+
+.bg-cram{
+    background-color: #F5EBD0;}
+/* 
+ .card{        
+     border: none;} */
+
+.primary-color{
+    color: #B68C3F;
+}
+.card{
+    border: none;
+    background-color: white;
+}
+mark{
+    color: #F5EBD0;
+}

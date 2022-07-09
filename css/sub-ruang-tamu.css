@@ -1,0 +1,88 @@
+.isi{
+    margin-top: 170px;
+}
+.estimasi{
+    color: #066A04;
+    font-size: 12px;
+}
+.row{
+    margin-bottom: 30px;
+}
+.bg-cram{
+    background-color: #F5EBD0;
+}
+.bg-none{
+    background-color: none;
+}
+.bg-img1{
+    background-image: url("../assets/Other/setsofa.jpg");
+    background-size: cover;
+}
+.bg-img2{
+    background-image: url("../assets/Other/sofa.jpg");
+    background-size: cover;
+}
+.bg-img3{
+    background-image: url("../assets/Other/kursi1.jpg");
+    background-size: cover;
+}
+.bg-img4{
+    background-image: url("../assets/Other/rak.jpg");
+    background-size: cover;
+}
+.h{
+    height: 300px;
+    color: whitesmoke;
+}
+.h2{
+    text-align: left;   
+}
+
+.img-produk{
+    width: 1024px;
+    /* height: 256px; */
+}
+.bg-img-meja{
+    background-image: url("../assets/Other/meja2.jpg");
+    background-size: cover;
+}
+.primary-color{
+    color: #B68C3F;   
+}
+.card{
+    border: none;
+    background-color: #F5EBD0;
+}
+/* .card:hover{
+    border-color: #F5EBD0;
+    border-style:ridge ;
+} */
+.mid{
+    text-align: center;
+}
+
+.filterButton{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    display: block;
+    color: gray;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.filterButton:focus{
+    border: 1px solid lightsalmon;
+    outline: none;
+    border-radius: 20px;
+    color: lightsalmon;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
