@@ -1,0 +1,58 @@
+.content-item{
+    margin-top: 170px;
+}
+
+.primary-color{
+    color: #B68C3F;
+    
+}
+
+.btn-troli{
+    color: #FFF;
+}
+
+#pencetan{
+    text-align: center;
+    border: unset;
+    background-color: rgb(43, 255, 0);
+    border-radius: 5px;
+}
+
+.periode{
+    font-size: 12px;
+}
+
+.img-content{
+    width: 500px;
+}
+
+.judul{
+    background-image: url(../../../assets/00.jpg);
+    height: 250px;
+    padding-top: 40px;
+    color: whitesmoke;
+    font-size: 150px;
+}
+
+.filosofi{
+    width: 1100px;
+}
+
+.hiring{
+    background-image: url(../../../assets/karir/background.jpg);
+    height: 250px;
+    padding-top: 40px;
+    color: black;
+    font-size: 100px;
+}
+
+.icon {
+    background-color: yellow;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.gambar {
+    width: 100%;
+}

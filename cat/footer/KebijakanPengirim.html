@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src='main.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+        <!-- login -->
+    <script defer src="../../js/scriptLog.js"></script>
+    <link rel="stylesheet" href="../../css/styleLogin.css">
+
+</head>
+
+ <!--Navbar-->
+ <nav class="navbar navbar-expand-lg navbar-sticky navbar-dark pt-2 fixed-top">
+    <div class="container">
+        <table class="table table-borderless">
+            <tr>
+                <td rowspan="2">
+                    <a class="navbar-brand font-weight-bold pt-0 m-auto" href="../../index.html"><img class="logo" src="../../assets/biteki.png" height="60"></a>
+                </td>
+                <td>
+                    <div class="input-group mt-3 ">
+                        <input type="text" class="form-control border border-secondary" placeholder="Cari barang ..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary btn-light" type="button" id="button-addon2"><img src="../../assets/cari.png" height="20" width="20" alt=""></button>
+                        </div>
+                      </div>
+                </td>
+                <!-- <td><input class="search mt-1" type="text" placeholder=" Cari barang.." size="90" ></td> -->
+                <td><a href="../keranjang_page.html"><input type="image" class="mt-3" src="../../assets/cart.svg" alt="" height="30" width="30"></a></td>
+                <td>
+                    <div class="vertical-line mt-3"></div>
+                </td>
+                <td><button type="button" class="btn btn-light mt-3 " data-toggle="modal" data-target="#loginForm">Masuk</button></td>
+                    <!--Login -->
+        
+                    <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header border-bottom-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-tittle mb-4">
+                                        <h4>Masuk</h4>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div id="error" class=" error_message text-white pl-2"></div>
+                                        <form id='form' action="/index.html" method="GET">
+                                            <div class="form-group">
+                                                    <label for="email" class="text-muted">Email</label>
+                                                    <input type="email" class="form-control" id="email" required>
+                                                    <span id="emailMsg"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password" class="text-muted">Password</label>
+                                                <input type="password" class="form-control" id="passLogin" required>
+                                                <span id="passMsg"></span>
+                                            </div>
+                                            
+                                            <button class="btn text-white" style="width: 9em;" id="btnLogin1">Masuk</button>
+                                        </form> 
+                                        <br>
+                                        <div class="text-center ">atau masuk dengan</div>
+                                        <div class="d-flex justify-content-center">  
+                                            <input type="image" class="btn" height="40" data-placement="button" href="#" data-toggle="tooltip" title="Google" src="/assets/google.png">
+                                            <input type="image" class="btn" height="40" data-placement="button" href="#" data-toggle="tooltip" title="Facebook" src="/assets/facebook.png"> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <div class="signup-section">Belum punya akun? <a href="../Daftar.html" class="regText" id="sign">Daftar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <td><a href="../Daftar.html"><button type="button" class="btn btn-secondary mt-3">Daftar</button></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../ruang tamu/raung tamu.html" role="button" aria-haspopup="true" aria-expanded="false">Ruang Tamu</a>
+                                <div class="dropdown-menu bg-dropdown" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../ruang tamu/halaman set sofa.html">Set Sofa dan Ruang Tamu</a>
+                                    <a class="dropdown-item" href="../ruang tamu/halaman sofa.html">Sofa</a>
+                                    <a class="dropdown-item" href="../ruang tamu/halaman meja ruang tamu.html">Meja Ruang Tamu</a>
+                                    <a class="dropdown-item" href="../ruang tamu/halaman tempat duduk.html">Tempat Duduk</a>
+                                    <a class="dropdown-item" href="../ruang tamu/ruang penyimpanan.html">Ruang Penyimpanan</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../Kamar Tidur/kamar_tidur.html" role="button" aria-haspopup="true" aria-expanded="false">Kamar Tidur</a>
+                                <div class="dropdown-menu bg-dropdown" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../Kamar Tidur/kasur.html">Kasur</a>
+                                    <a class="dropdown-item" href="../Kamar Tidur/Tempat_Tidur.html">Tempat Tidur</a>
+                                    <a class="dropdown-item" href="../Kamar Tidur/tempat_penyimpanan.html">Tempat Penyimpanan</a>
+                                    <a class="dropdown-item" href="../Kamar Tidur/aksesoris_kamar.html">Aksesoris Kamar Tidur</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../ruang makan/ruang_makan.html" role="button" aria-haspopup="true" aria-expanded="false">Ruang Makan</a>
+                                <div class="dropdown-menu bg-dropdown" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../ruang makan/Set meja makan.html">Set Meja Makan</a>
+                                    <a class="dropdown-item" href="../ruang makan/meja&kursi_makan.html">Meja dan Kursi Makan</a>
+                                    <a class="dropdown-item" href="../ruang makan/meja&kursi_bar.html">Meja dan Kursi Bar</a>
+                                    <a class="dropdown-item" href="../ruang makan/storage.html">Tempat Penyimpanan</a>
+                                    <a class="dropdown-item" href="../ruang makan/acc_ruang_makan.html">Aksesoris Ruang Makan</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../Ruang Kerja/home.html" role="button" aria-haspopup="true" aria-expanded="false">Ruang Kerja</a>
+                                <div class="dropdown-menu bg-dropdown" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../Ruang Kerja/setruangkerja_page.html">Set Meja Kerja</a>
+                                    <a class="dropdown-item" href="../Ruang Kerja/mejakerja_page.html">Meja Kerja</a>
+                                    <a class="dropdown-item" href="../Ruang Kerja/kursikerja_page.html">Kursi Kerja</a>
+                                    <a class="dropdown-item" href="../Ruang Kerja/tempatpenyimpanan.html">Tempat Penyimpanan</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../dekorasi/dekorasi_page.html" role="button" aria-haspopup="true" aria-expanded="false">Dekorasi</a>
+                                <div class="dropdown-menu bg-dropdown" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../dekorasi/karpet_page.html">Karpet</a>
+                                    <a class="dropdown-item" href="../dekorasi/lampu_page.html">Lampu</a>
+                                    <a class="dropdown-item" href="../dekorasi/linen_page.html">Linen Rumah</a>
+                                    <a class="dropdown-item" href="../dekorasi/hiasan_page.html">Hiasan</a>
+                                    <a class="dropdown-item" href="../dekorasi/dinding_page.html">Dekorasi Dinding</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+</nav>
+
+<!--Konten-->
+<body>
+
+<div class="container bg-white content-item">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" class="bg-white">
+          <li class="breadcrumb-item"><a class="primary-color" href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Kebijakan Pengiriman</li>
+        </ol>
+    </nav>
+    
+
+
+    <div class="btn-group-vertical">
+        <a class="btn btn-light" href="Faq.html" role="button">FAQ</a>
+        <a class="btn btn-light" href="Kebijakan.html" role="button">Kebijakan Privasi</a>
+        <a class="btn btn-light"href="SyaratdanKetentuan.html" role="button">Syarat Dan Ketentuan</a>
+        <a class="btn btn-light active" href="KebijakanPengirim.html" role="button">Kebijakan Pengiriman</a>
+        <a class="btn btn-light" href="KebijakanPengembalian.html" role="button">Kebijakan Pengembalian</a>
+        <a class="btn btn-light" href="lokasi.html" role="button">Lokasi Kota Pengiriman</a>
+    </div>
+        
+    <div class="container">
+        <hr style="background-color: chocolate;">
+        <h1 class="text-center">Kebijakan Pengirim</h1>
+        <hr style="background-color: chocolate;">   
+    <h4>&nbsp;</h4>
+
+<!-- Accordion -->
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-light btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Kebijakan Pengiriman 
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <ul><li>Untuk barang dengan status <i>in stock</i>, lama pengiriman barang mulai dari 2 (dua) hari.</li><li>Untuk barang dengan status <i>out stock</i>, lama pengiriman barang mulai dari 30 (tiga puluh) hari.</li><li>Pemilihan tanggal pengiriman bisa dilakukan di halaman <a href="#">Pesanan Saya</a> setelah order dilakukan.</li><li>Bila barang sudah siap untuk dikirim, tim kami akan mengkonfirmasi via Whatsapp (0822-6033-3593).</li><li>Instalasi produk dapat dilakukan di hari yang sama dengan hari pengiriman untuk beberapa produk tertentu, atau antara 2 - 5 hari setelah produk terkirim untuk beberapa produk lainnya. Tim kami akan menghubungi Anda selambat-lambatnya sehari sebelum melalukan perakitan. Bila ada kebingungan, Anda dapat menanyakannya langsung melalui nomor WA kami di 0822-6033-3593.</li><li>Perubahan jadwal pengiriman dapat ditanyakan via layanan <i>customer service </i>kami, yang dapat dihubungi di nomer (021) 50820022, email hello@fabelio.com, atau melalui fitur <i>live chat</i> yang tersedia di website.</li><li>Layanan pengiriman barang dapat dilakukan untuk wilayah Jabodetabek, Jawa Barat, Jawa Tengah, DI Yogyakarta dan Jawa Timur.</li><li>Layanan perakitan barang dapat dilakukan untuk wilayah Jabodetabek, Purwakarta, Subang, Cianjur, Garut, Majalengka, Sumedang, Tasikmalaya, Sukabumi, Boyolali, Demak, Kendal, Klaten, Kudus, Magelang, Semarang, Salatiga, Surakarta, Yogyakarta, Sleman, Bantul, Kulon Progo, Surabaya, Sidoarjo dan Gresik.</li><li>Pengiriman melalui gudang Karawaci (area Jakpus, Jakut, Jakbar, Jaksel, Bogor, Depok dan Tangerang) bisa dilakukan setiap hari. Sedangkan pengiriman barang melalui gudang lainnya (Cibitung, Bandung, Semarang dan Yogyakarta) dapat dilakukan setiap hari kecuali di hari Senin.</li><li>Waktu pengiriman produk melalui gudang Karawaci (area Jakpus, Jakut, Jakbar, Jaksel, Bogor, Depok dan Tangerang) dapat dilakukan dari Pk 08.00 - Pk 22.00 setiap harinya. Sedangkan waktu pengiriman produk melalui gudang lainnya (Cibitung, Bandung, Semarang dan Yogyakarta) dapat dilakukan dari Pk 08.00 - Pk 20.00 setiap harinya.</li><li>Layanan instalasi produk dapat dilakukan dari Pk 08.00 - Pk 20.00 setiap harinya.</li><li>Biaya pengiriman di bawah merupakan biaya dari total pembelanjaan <strong>sebelum diskon</strong></li><li>Untuk produk “Pay &amp; Carry”, maka produk tersebut tidak akan dikirimkan oleh Fabelio, melainkan harus diambil sendiri oleh customer.</li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-light btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Area Pengiriman 
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <figure class="table">
+                    <table>
+                    <thead>
+                    <tr>
+                        <th>
+                            <strong>Area</strong>
+                        </th>
+                        <th>
+                            <strong>Sub Total Purchase</strong>
+                        </th>
+                        <th>
+                            <strong>Shipping Fee (Max)</strong>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td rowspan="21">
+                            <p>
+                                <strong>JABODETABEK, JAWA BARAT, JAWA TENGAH, DI YOGYAKARTA, JAWA TIMUR</strong>
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                        </td>
+                        <td>
+                            <strong>Di bawah 500rb</strong>
+                        </td>
+                        <td>
+                            <strong>Rp99,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>500rb-1 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp129,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>1-2 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp149,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>2-3 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp199,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>3-5 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp249,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>5-7.5 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp299,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>7.5-10 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp399,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>10-20 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp499,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>20-25 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp749,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>25-50 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp999,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>50-75 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp1,499,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>75-100 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp1,999,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>100-125 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp2,499,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>125-150 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp2,999,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>150-175 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp3,499,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>175-200 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp3,999,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>200-225 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp4,499,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>225-250 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp4,999,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>250-275 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp5,499,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>275-300 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp5,999,000</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>&gt;300 Juta</strong>
+                        </td>
+                        <td>
+                            <strong>Rp6,000,000</strong>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </figure>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+    <h4>&nbsp;</h4>
+   <!-- <ul><li>Untuk barang dengan status <i>in stock</i>, lama pengiriman barang mulai dari 2 (dua) hari.</li><li>Untuk barang dengan status <i>out stock</i>, lama pengiriman barang mulai dari 30 (tiga puluh) hari.</li><li>Pemilihan tanggal pengiriman bisa dilakukan di halaman <a href="https://fabelio.com/sales/order/history/">Pesanan Saya</a> setelah order dilakukan.</li><li>Bila barang sudah siap untuk dikirim, tim kami akan mengkonfirmasi via Whatsapp (0822-6033-3593).</li><li>Instalasi produk dapat dilakukan di hari yang sama dengan hari pengiriman untuk beberapa produk tertentu, atau antara 2 - 5 hari setelah produk terkirim untuk beberapa produk lainnya. Tim kami akan menghubungi Anda selambat-lambatnya sehari sebelum melalukan perakitan. Bila ada kebingungan, Anda dapat menanyakannya langsung melalui nomor WA kami di 0822-6033-3593.</li><li>Perubahan jadwal pengiriman dapat ditanyakan via layanan <i>customer service </i>kami, yang dapat dihubungi di nomer (021) 50820022, email hello@fabelio.com, atau melalui fitur <i>live chat</i> yang tersedia di website.</li><li>Layanan pengiriman barang dapat dilakukan untuk wilayah Jabodetabek, Jawa Barat, Jawa Tengah, DI Yogyakarta dan Jawa Timur.</li><li>Layanan perakitan barang dapat dilakukan untuk wilayah Jabodetabek, Purwakarta, Subang, Cianjur, Garut, Majalengka, Sumedang, Tasikmalaya, Sukabumi, Boyolali, Demak, Kendal, Klaten, Kudus, Magelang, Semarang, Salatiga, Surakarta, Yogyakarta, Sleman, Bantul, Kulon Progo, Surabaya, Sidoarjo dan Gresik.</li><li>Pengiriman melalui gudang Karawaci (area Jakpus, Jakut, Jakbar, Jaksel, Bogor, Depok dan Tangerang) bisa dilakukan setiap hari. Sedangkan pengiriman barang melalui gudang lainnya (Cibitung, Bandung, Semarang dan Yogyakarta) dapat dilakukan setiap hari kecuali di hari Senin.</li><li>Waktu pengiriman produk melalui gudang Karawaci (area Jakpus, Jakut, Jakbar, Jaksel, Bogor, Depok dan Tangerang) dapat dilakukan dari Pk 08.00 - Pk 22.00 setiap harinya. Sedangkan waktu pengiriman produk melalui gudang lainnya (Cibitung, Bandung, Semarang dan Yogyakarta) dapat dilakukan dari Pk 08.00 - Pk 20.00 setiap harinya.</li><li>Layanan instalasi produk dapat dilakukan dari Pk 08.00 - Pk 20.00 setiap harinya.</li><li>Biaya pengiriman di bawah merupakan biaya dari total pembelanjaan <strong>sebelum diskon</strong></li><li>Untuk produk “Pay &amp; Carry”, maka produk tersebut tidak akan dikirimkan oleh Fabelio, melainkan harus diambil sendiri oleh customer.</li></ul> -->
+   
+   <!-- <figure class="table">
+    <table>
+    <thead>
+    <tr>
+        <th>
+            <strong>Area</strong>
+        </th>
+        <th>
+            <strong>Sub Total Purchase</strong>
+        </th>
+        <th>
+            <strong>Shipping Fee (Max)</strong>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="21">
+            <p>
+                <strong>JABODETABEK, JAWA BARAT, JAWA TENGAH, DI YOGYAKARTA, JAWA TIMUR</strong>
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+        </td>
+        <td>
+            <strong>Di bawah 500rb</strong>
+        </td>
+        <td>
+            <strong>Rp99,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>500rb-1 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp129,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>1-2 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp149,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>2-3 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp199,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>3-5 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp249,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>5-7.5 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp299,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>7.5-10 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp399,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>10-20 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp499,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>20-25 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp749,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>25-50 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp999,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>50-75 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp1,499,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>75-100 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp1,999,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>100-125 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp2,499,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>125-150 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp2,999,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>150-175 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp3,499,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>175-200 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp3,999,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>200-225 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp4,499,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>225-250 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp4,999,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>250-275 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp5,499,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>275-300 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp5,999,000</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>&gt;300 Juta</strong>
+        </td>
+        <td>
+            <strong>Rp6,000,000</strong>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    </figure> -->
+    
+</div>
+</div>
+
+    
+
+ <!--Footer-->
+ <footer class="page-footer font-small bg-light">
+    <div class="container text-sm text-dark py-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-3">
+                <div class="row mb-3">
+                    <h6>Biteki</h6>
+                </div>
+                <div class="row">
+                    <p>
+                        <a href="tentang_kami.html" class="text-success">Tentang kami</a><br>
+                        <a href="biteki_project.html" class="text-success">Biteki Projects</a><br>
+                        <a href="promo_biteki1.html" class="text-success">Promo Biteki Project</a><br>
+                        <a href="blog.html" class="text-success">Blog</a><br>
+                        <a href="filosofi.html" class="text-success">Filosofi</a><br>
+                        <a href="karir.html" class="text-success">Karir</a>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row mb-3">
+                    <h6>LAYANAN PELANGGAN </h6>
+                </div>
+                <div class="row">
+                    <p>
+                        <a href="Faq.html" class="text-success">FAQ</a><br>
+                        <a href="Kebijakan.html" class="text-success">Kebijakan Privasi</a><br>
+                        <a href="SyaratdanKetentuan.html" class="text-success">Syarat dan Ketentuan </a> <br>
+                        <a href="KebijakanPengirim.html" class="text-success">Kebijakan Pengirim </a> <br>
+                        <a href="KebijakanPengembalian.html" class="text-success">Kebijakan Pengembalian </a><br>
+                        <a href="lokasi.html" class="text-success">Lokasi Kota Pengiriman</a>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row mb-3">
+                    <h6>KONTAK KAMI</h6>
+                </div>
+                <div class="row">
+                    <p>
+                        +62832194802 <br>
+                        (021)3123124123 <br>
+                        Hello@biteki.com <br>
+                        Senin - Minggu / 10.00 - 20.00
+                    </p>
+                </div>
+                
+            </div>
+            <div class="col-sm-3">
+                <div class="row mb-3">
+                    <h6>DAFTAR SEKARANG</h6>
+                </div>
+                <div class="row">
+                    <td><input type="text" class="footerinput" placeholder="ALAMAT EMAIL"></td>
+                    <td><button type="button" class="btn btn-warning mt-2">DAFTAR</button></td>
+                </div>
+                
+            </div>
+        </div>
+                    
+    </div>
+
+    <div class="container text-center">
+        <h5 class="text-center my-4">METODE PEMBAYARAN</h5>
+        <div class="row my-4">
+            <div class="col">
+                <img src="../../assets/pembayaran/bni.png" alt="" width="150" height="40" >
+            </div>
+            <div class="col">
+                <img src="../../assets/pembayaran/bri.png" alt="" width="150" height="40">
+            </div>
+            <div class="col">
+                <img src="../../assets/pembayaran/btn.png" alt="" width="150" height="40">
+            </div>
+            <div class="col">
+                <img src="../../assets/pembayaran/mandiri.png" alt="" width="150" height="40">
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col">
+                <img src="../../assets/pembayaran/bpd_diy.png" alt="" width="150" height="40"> 
+            </div>
+            <div class="col">
+                <img src="../../assets/pembayaran/dana.png" alt="" width="150" height="40">
+            </div>
+            <div class="col">
+                <img src="../../assets/pembayaran/gopay.png" alt="" width="150" height="40">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3 bg-dark text-white">Hak Cipta © 2021 PT Biteki Indonesia
+    </div>
+    
+</footer>
+
+</body>
+</html>

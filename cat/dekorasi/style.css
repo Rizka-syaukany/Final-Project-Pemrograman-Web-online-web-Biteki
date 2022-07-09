@@ -1,0 +1,72 @@
+.content-item{
+    margin-top: 170px;
+}
+.bg-row{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bg-item{
+    background-color: #F5EBD0;
+    border-radius: 10px;
+}
+.estimasi{
+    color: #066A04;
+    font-size: 12px;
+}
+.bg-dropdown{
+    background-color: #B68C3F;
+}
+
+#bg-item{
+    width: 170px;
+    background-color: #F5EBD0;
+    border-radius: 10px;
+    margin: 7px;
+}
+
+.primary-color{
+    color: #B68C3F;
+}
+.img-size1{
+    height: 370px;
+}
+.img-size2{
+    margin-bottom: 20px;
+    height: 175px;
+}
+
+.img-size3{
+    height: 270px;
+}
+.card-text{
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+.filterButton{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    display: block;
+    color: gray;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.filterButton:focus{
+    border: 1px solid lightsalmon;
+    outline: none;
+    border-radius: 20px;
+    color: lightsalmon;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
