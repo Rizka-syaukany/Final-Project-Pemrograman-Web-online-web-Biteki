@@ -1,0 +1,16 @@
+#disabledTextInput{
+    border: 0px;;
+}
+.bd{
+    border: 0px;;
+}
+.checkbox{
+    transform: scale(1.5);
+}
+.thumbnail{
+    height: 100px;
+    width: 150px;
+}
+.text-warning{
+    text-decoration: none;
+ }

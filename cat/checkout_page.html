@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Biteki</title>
+    <style src="style.css"></style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light"  style="background-color: #B68C3F;">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/biteki.png" height="70" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="container mt-5">
+        <h3>Checkout</h3>
+        <div class="row mt-4">
+            <div class="col-8 q">
+                
+                <b>Alamat Pengiriman</b>
+                <hr>
+                <b>Rizka Akbar Syaukany</b>
+                <p>6282220697221 <br>
+                Pejawaran rt rw3 Pejawaran Banjarnegara</p>
+                <hr>
+                <div class="row">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-warning">Pilih Alamat Lain</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-warning">Kirim Ke Beberapa Alamat</button>
+                    </div>
+                </div>
+                    
+                <div class="row py-2 my-3 bg-light">
+                    <div class="col">
+                        <div class="row my-2">
+                            <div class="col">
+                                <img src="../assets/img/dekorasi/bantal/bantal 1.jpg" height="100px" width="150px" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <p>Bantal Amy 45X45</p>
+                                </div>
+                                <div class="row">
+                                    <b>Rp 26.000</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                <img src="../assets/img/dekorasi/lampu/lampu 1.jpg" height="100px" width="150px" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <p>Honolulu Lampu Belajar Minimalis - Indoor</p>
+                                </div>
+                                <div class="row">
+                                    <b>Rp 300.000</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                <img src="../assets/img/dekorasi/karpet/karpet 1.jpg" height="100px" width="150px" alt="">
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <p>Karpet Dave Lines Medium</p>
+                                </div>
+                                <div class="row">
+                                    <b>Rp 150.000</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <b>Pilih Pengiriman</b>
+                        <select class="custom-select bg-warning">
+                            <option class="bg-white" selected>Pengiriman</option>
+                            <option class="bg-white" value="1">Exclusive (4 Hari Pengiriman)</option>
+                            <option class="bg-white" value="2">Reguler (4-6 Hari Pengiriman)</option>
+                          </select>
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+            <div class="col-4 bg-light py-2 rounded-lg fixed-right">
+                <h5 class="mb-3">Ringkasan belanja</h5>
+                <div class="row">
+                    <div class="col-8">
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Total Harga (0 barang)" disabled>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" id="disabledTextInput" class="form-control ml-auto" placeholder="Rp0" disabled>
+                    </div>
+                </div>
+                <hr>
+                <h5>Total Harga</h5>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="-" disabled>
+                <button type="button" class="btn btn-warning my-2 w-100 text-dark" data-toggle="modal" data-target="#exampleModalScrollable">
+                    Pilih Pembayaran
+                </button>
+                                
+            </div>
+            
+  
+            <!-- Modal Pembayaran-->
+            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Pembayaran</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <b>Metode Pembayaran</b>
+                            </div>
+                            <div class="col" style="text-align: right;">
+                                <a href="#" class="text-warning" style="text-decoration: none;" data-toggle="modal" data-target="#metodePembayaran">Lihat Semua</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 mt-4">
+                                <img src="../assets/pembayaran/bni.png" alt="" height="30px">
+                            </div>
+                            <div class="col mt-3 ml-2">
+                                <b>Transfer Manual</b>
+                                <p class="text-secondary">1234 123 124124 a.n Rizka Akbar Syaukany</p>
+                            </div>
+                        </div>
+                        
+                        <b>Ringkasan Pembayaran</b>
+                        
+                        
+                        <div class="row mt-2">
+                            <div class="col">
+                                <p>Total Tagihan</p>
+                            </div>
+                            <div class="col" style="text-align: right;">
+                                <p>Rp 26.000</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Biaya Layanan</p>
+                            </div>
+                            <div class="col" style="text-align: right;">
+                                <p>Rp0</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-warning">Bayar</button> -->
+                    <a class="btn btn-warning" href="bayar_page.html">Bayar</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Modal Metode Pembayaran -->
+            <div class="modal fade" id="metodePembayaran" tabindex="-1" role="dialog" aria-labelledby="metodePembayaranTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="metodePembayaranTitle">Pilih Metode Pembayaran</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="bank">
+                                <div class="row">
+                                    <div class="col">
+                                        <b>Tranfer Bank</b>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2 mt-4">
+                                        <img src="../assets/pembayaran/bni.png" alt="" height="30px">
+                                    </div>
+                                    <div class="col mt-4 ml-3">
+                                        <p>Transfer Bank BNI</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-2 mt-2">
+                                        <img class="ml-3" src="../assets/pembayaran/bri1.png" alt="" height="40px">
+                                    </div>
+                                    <div class="col mt-2 ml-3">
+                                        <p>Transfer Bank BRI</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-2 mt-2">
+                                        <img class="ml-1" src="../assets/pembayaran/bpd_diy.png" alt="" height="15px">
+                                    </div>
+                                    <div class="col mt-2 ml-3">
+                                        <p>Transfer Bank BPD DIY</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-2 mt-2">
+                                        <img class="ml-1" src="../assets/pembayaran/btn.png" alt="" height="15px">
+                                    </div>
+                                    <div class="col mt-2 ml-3">
+                                        <p>Transfer Bank BTN</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-2 mt-2">
+                                        <img class="ml-3" src="../assets/pembayaran/mandiri.png" alt="" height="15px">
+                                    </div>
+                                    <div class="col mt-2 ml-3">
+                                        <p>Transfer Bank Mandiri</p>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="instant_payment">
+                                <div class="row">
+                                    <div class="col">
+                                        <b>Instant Payment</b>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2 mt-4">
+                                        <img class="ml-1" src="../assets/pembayaran/gopay.png" alt="" height="20px">
+                                    </div>
+                                    <div class="col mt-4 ml-3">
+                                        <p>GOPAY</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-2 mt-2">
+                                        <img class="ml-1" src="../assets/pembayaran/dana.png" alt="" height="20px">
+                                    </div>
+                                    <div class="col mt-2 ml-3">
+                                        <p>DANA</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>

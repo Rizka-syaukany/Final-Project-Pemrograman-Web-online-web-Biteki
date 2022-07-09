@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link rel="stylesheet" href="../css/styleDaftar.css">
+        <link rel="stylesheet" href="../css/styleLogin.css">
+        <title>Daftar - Biteki</title>
+    </head>
+
+    <body>
+        <div class="d-flex justify-content-center">  
+            <a href="../index.html"><img class="biteki" src="../assets/biteki.png"></a>
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-5 container d-flex justify-content-end px-0">
+                    <img class="imgR" src="../assets/propertiRegister.jpg" alt="">
+                </div>
+                <div class="col-lg-7 container d-flex justify-content-start px-0">
+                    <div class="card mr-4 my-2">
+                        <div class="card-body px-2">
+                            <h2 class="card-heading text-center mt-2">Daftar Sekarang</h2>
+                            <p class="card-subheading pb-3 text-center">Sudah punya akun?<a href="#" data-toggle="modal" data-target="#loginForm"> Masuk</a></p>
+                            <form method="GET" action="/index_profile.html">
+                                <div class="row justify-content-center ">
+                                    <button type="button" class="btn btn-white btn-round col-md-5 google" data-toggle="tooltip" data-placement="bottom" title="Google">
+                                        <img class="img1" src="../assets/google.png" height="20"> Google</img>
+                                    </button>
+                                    <button type="button" class="btn btn-white btn-round col-md-5 facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+                                        <img class="img2" src="../assets/facebook.png" height="20"> Facebook</img>
+                                    </button>
+                                </div>
+                                <div class="text-center m-3 text-muted or"><p>atau daftar dengan</p></div>
+                                <div class="row rtwo">
+                                    <div class="form-group col-md-12 fthree">
+                                        <label for="exampleInputEmail1" class="text-muted">Email</label>
+                                            <input type="email" class="form-control" id="email1" aria-describedby="emailHelp">
+                                            <small id="emailHelp" class="form-text text-muted"></small>
+                                        <label class="text-muted">Contoh: name@email.com</label>
+                                </div>
+                                <div class="row rfour">
+                                    <div class="col-md-4"> 
+                                        <button type="submit" class="btn btn-secondary btnreg">
+                                            <span>Daftar</span>
+                                        </button> 
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal login -->
+                <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header border-bottom-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-tittle mb-4">
+                                    <h4>Masuk</h4>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div id="error" class=" error_message text-white pl-2"></div>
+                                    <form id='form' action="../index.html" method="GET">
+                                        <div class="form-group">
+                                                <label for="email" class="text-muted">Email</label>
+                                                <input type="email" class="form-control" id="email" required>
+                                                <span id="emailMsg"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password" class="text-muted">Password</label>
+                                            <input type="password" class="form-control" id="passLogin" required>
+                                            <span id="passMsg"></span>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn text-white px-5" id="btnLogin1">Masuk</button>
+                                    </form> 
+                                    <br>
+                                    <div class="text-center ">atau masuk dengan</div>
+                                    <div class="d-flex justify-content-center">  
+                                        <input type="image" class="btn" height="40" data-placement="bottom" href="#" data-toggle="tooltip" title="Google" src="../assets/google.png">
+                                        <input type="image" class="btn" height="40" data-placement="bottom" href="#" data-toggle="tooltip" title="Facebook" src="../assets/facebook.png"> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <div class="signup-section">Belum punya akun? <a href="../cat/Daftar.html" class="regText" id="sign">Daftar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+            <script src="../js/daftar.js"></script>
+            <script defer src="../js/scriptLog.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
